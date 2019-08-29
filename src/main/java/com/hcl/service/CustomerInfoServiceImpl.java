@@ -26,7 +26,7 @@ public class CustomerInfoServiceImpl implements CustomerInfoService  {
 
 		OrderDetails details = new OrderDetails();
 		details.setDate(LocalDate.now());
-	
+	details.setPolicyId(infoDto.getPolicyId());
 		details.setEmail(infoDto.getEmail());
 		details.setName(infoDto.getName());
 		
